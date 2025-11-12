@@ -1,0 +1,258 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  background: #f5f5f5;
+  color: #222;
+}
+
+/* Header */
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 10%;
+  background: #000;
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 24px;
+  color: #fff;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.logo:hover{
+  color: white;
+  text-shadow: 0 0 25px white,
+               0 0 50px blue;
+  transform: scale(1.1);
+}
+
+.logo span {
+  color: grey;
+}
+
+.navbar a {
+  font-size: 18px;
+  color: white;
+  margin: 0 15px;
+  font-weight: 500;
+  border-bottom: 2px solid transparent;
+  transition: 0.3s ease;
+}
+
+.navbar a:hover,
+.navbar a.active {
+  color: rgb(255, 255, 255);
+  border-bottom: 2px solid rgb(0, 0, 0);
+}
+
+.contact {
+  background-color: white;
+  color: black;
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: 2px solid transparent;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.contact:hover {
+  background: blue;
+  color: white;
+  box-shadow: 0 0 25px blue;
+}
+
+/* HERO */
+.project-hero {
+  height: 60vh;
+  background: url(https://i.pinimg.com/736x/34/57/d9/3457d93fa8b0e117b1c5faf9c6599315.jpg) center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  position: relative;
+  margin-top: 80px;
+}
+
+.project-hero::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.5);
+}
+
+.overlay {
+  position: relative;
+  z-index: 2;
+}
+
+.overlay h1 {
+  font-size: 48px;
+  margin-bottom: 15px;
+  color: white;
+}
+
+.overlay p {
+  font-size: 18px;
+  color: blue;
+}
+
+/* PROJECTS GRID */
+.projects-section {
+  padding: 100px 10%;
+  background: #8f8f8f;
+  text-align: center;
+}
+
+.projects-section h2 {
+  font-size: 34px;
+  color: blue;
+  margin-bottom: 40px;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.project-card {
+  background: #f9f9f9;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 20px blue;
+}
+
+.project-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.card-content h3 {
+  margin-bottom: 10px;
+  color: blue;
+}
+
+.card-content p {
+  color: #444;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 8px 16px;
+  background: blue;
+  color: #000;
+  border-radius: 5px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #000;
+  color: white;
+}
+
+/* TECHNOLOGIES */
+.tech-section {
+  background: #111;
+  color: white;
+  text-align: center;
+  padding: 80px 10%;
+}
+
+.tech-section h2 {
+  color: white;
+  margin-bottom: 40px;
+}
+
+.tech-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.tech {
+  background: white;
+  color: black;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.tech:hover {
+  background: blue;
+  color: white;
+}
+
+/* CALL TO ACTION */
+.cta-section {
+  text-align: center;
+  padding: 100px 10%;
+  background: #919191;
+}
+
+.cta-section h2 {
+  font-size: 32px;
+  color: blue;
+  margin-bottom: 20px;
+}
+
+.cta-section p {
+  color: #333;
+  max-width: 700px;
+  margin: 0 auto 30px;
+  line-height: 1.7;
+}
+
+.cta-btn {
+  background: blue;
+  color: black;
+  padding: 12px 28px;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.cta-btn:hover {
+  background: #000;
+  color: white;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,175 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  background:black
+}
+
+/* HEADER */
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 30px 12%;
+  background: rgba(0, 0, 0,);
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 600;
+  color: white;
+  transition: 0.3s;
+}
+
+.logo:hover{
+  color: white;
+  text-shadow: 0 0 25px white,
+               0 0 50px blue;
+  transform: scale(1.1);             
+}
+
+.logo span {
+  color: rgb(0, 29, 196);
+}
+
+.navbar a {
+  font-size: 18px;
+  color: #fff;
+  margin: 0 20px;
+  font-weight: 500;
+  border-bottom: 2px solid transparent;
+  transition: 0.3s ease;
+}
+
+.navbar a:hover,
+.navbar a.active {
+  color: white;
+  border-bottom: 2px solid rgb(0, 0, 0);
+}
+
+.contact {
+  background-color: rgb(255, 255, 255);
+  color: black;
+  padding: 10px 20px;
+  border-radius: 6px;
+  border: 2px solid transparent;
+  font-size: 16px;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.contact:hover {
+  background-color: blue;
+  color: rgb(255, 255, 255);
+  box-shadow: 0 0 25px blue;
+}
+
+/* MAIN CONTENT */
+.education-page {
+  padding: 140px 10% 60px;
+}
+
+.education-header h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 10px;
+  color: blue;
+}
+
+.education-header .intro {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 50px;
+  color: #ffffff;
+}
+
+/* TIMELINE */
+.timeline {
+  position: relative;
+  margin: 50px 0;
+  padding-left: 30px;
+  border-left: 2px solid rgb(0, 27, 180);
+}
+
+.timeline-item {
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.timeline-dot {
+  width: 16px;
+  height: 16px;
+  background-color: rgb(1, 51, 187);
+  border-radius: 50%;
+  position: absolute;
+  left: -9px;
+  top: 5px;
+}
+
+.timeline-content {
+  margin-left: 30px;
+}
+
+.timeline-content h3 {
+  color: rgb(11, 47, 204);
+  font-size: 1.3rem;
+  margin-bottom: 8px;
+}
+
+.timeline-content p, .timeline-content ul {
+  color: #ccc;
+  font-size: 0.95rem;
+}
+
+/* DASHBOARD SECTION */
+.dashboard {
+  margin-top: 80px;
+  text-align: center;
+}
+
+.dashboard h2 {
+  color: rgb(26, 6, 209);
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.dashboard-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 25px;
+  border-radius: 12px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 20px rgb(0, 27, 180);
+}
+
+.card h3 {
+  color: rgb(11, 47, 204);
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+.card p {
+  color: #ddd;
+  font-size: 0.95rem;
+}
