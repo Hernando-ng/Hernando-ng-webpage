@@ -11,7 +11,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    padding: 35px 12%;
+    padding: 20px 10%;
     background: rgb(0, 0, 0);
     backdrop-filter: blur(10px);
     display: flex;
@@ -20,15 +20,15 @@
     z-index: 1000;
 }
 .logo{
-    font-size: 25px;
+    font-size: 24px;
     color: rgb(255, 255, 255);
     font-weight: 600;
     transition: 0.3s ease;
 }
 .logo:hover{
     color: rgb(255, 255, 255);
-    text-shadow: 0 0 25px rgb(255, 255, 255),
-                 0 0 50px #1010eb;
+    text-shadow: 0 0 25px brown,
+                 0 0 50px brown;
     transform: scale(1.1);
 }
 span{
@@ -37,30 +37,29 @@ span{
 .navbar a{
     font-size: 18px;
     color: white;
-    font-weight: 500;
-    margin: 0 20px;
+    font-weight: 500px;
+    margin: 0 15px;
     border-bottom: 3px solid transparent;
     transition: 0.3s ease;
 }
 .navbar a:hover,
 .navbar a.active{
     color: rgb(252, 252, 252);
-    border-bottom: 3px solid rgb(0, 0, 0);
+    border-bottom: 2px solid rgba(104, 42, 0, 0.747);
 }
 .contact{
-    padding: 10px 28px;
+    padding: 10px 20px;
     background-color: white;
     color: black;
     border: 2px solid transparent;
     border-radius: 8px;
     font-size: 16px;
-    letter-spacing: 1px;
     font-weight: 600;
     transition: 0.3s ease;
 }
 .contact:hover{
-    background-color: rgb(0, 118, 173);
-    box-shadow: 0 0 25px rgb(0, 118, 173);
+    background: rgba(104, 42, 0, 0.747);
+    box-shadow: 0 0 25px rgba(104, 42, 0, 0.747);
     color: white;
 }
 .home{
@@ -69,11 +68,14 @@ span{
     background-image: url(https://i.pinimg.com/736x/4a/77/e5/4a77e5a4f41df00ad84dc8dce6321664.jpg);
     background-repeat: no-repeat;
     background-position: 100%;*/
-    background: url('https://i.pinimg.com/736x/4a/77/e5/4a77e5a4f41df00ad84dc8dce6321664.jpg')center/cover no-repeat;
+    background: url('https://i.pinimg.com/736x/d6/54/c6/d654c67897f00c7494d6b9d8fb24cc21.jpg')center/cover no-repeat;
     display: flex;
     align-items: center;
     gap: 7em;
     padding: 80px;
+}
+h2{
+    color: rgba(104, 42, 0, 0.747);
 }
 .home-content{
     max-width: 800px;
@@ -114,8 +116,8 @@ span{
 .btn-2{
     padding: 15px 20px;
     background-color: rgb(255, 255, 255);
-    color: rgb(0, 118, 173);
-    border: 2px solid rgb(0, 118, 173);
+    color: rgba(104, 42, 0, 0.747);
+    border: 2px solid rgba(104, 42, 0, 0.747);
     border-radius: 8px;
     font-size: 18px;
     letter-spacing: 1px;
@@ -124,8 +126,8 @@ span{
     cursor: pointer;
 }
 .btn-2:hover{
-    background-color: blue;
-    color: rgb(0, 0, 0);
+    background-color:rgba(104, 42, 0, 0.747);
+    color: white;
 }
 .img-box img{
     border-radius: 50%;
@@ -203,7 +205,7 @@ span{
     width: 93%;
     padding: 0.9em;
     font-size: 18px;
-    color: black;
+    color:rgba(104, 42, 0, 0.747);
     background: white;
    /* border-radius: 10%;*/
     margin: 1.5em;
@@ -224,7 +226,7 @@ span{
 .footer .social a img{
     font-size: 24px;
     color: grey;
-    border: 2px solid rgb(0, 118, 173);
+    border: 2px solid rgba(104, 42, 0, 0.747);
     width: 40px;
     height: 40px;
     line-height: 38px;
@@ -238,7 +240,7 @@ span{
 .footer .social a:hover{
     transform: scale(1.2) translateY(-10px);
     color: rgb(0, 0, 0);
-    border: 20px solid transparent rgb(0, 118, 173);
+    border: 20px solid transparent rgb(173, 104, 0);
 }
 .footer ul{
     margin-top: 0;
@@ -254,7 +256,7 @@ span{
     transition: 0.3s ease;
 }
 .footer ul li a:hover{
-    border-bottom: 3px solid rgb(0, 118, 173);
+    border-bottom: 3px solid rgba(104, 42, 0, 0.747);
 }
 .footer ul li{
     display: inline-block;
