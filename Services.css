@@ -3,16 +3,21 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     text-decoration: none;
     list-style: none;
+}
+body{
+    background-image: url(https://i.pinimg.com/1200x/9c/bb/45/9cbb450437b864beb3b76c0e365f7e66.jpg);
+    background-attachment: fixed;
+    background-size: cover;
 }
 .header{
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    padding: 35px 12%;
+    padding: 20px 10%;
     background: rgb(0, 0, 0);
     backdrop-filter: blur(10px);
     display: flex;
@@ -21,73 +26,73 @@
     z-index: 1000;
 }
 .logo{
-    font-size: 25px;
+    font-size: 24px;
     color: rgb(255, 255, 255);
     font-weight: 600;
     transition: 0.3s ease;
 }
 .logo:hover{
-    color: blue;
-    text-shadow: 0 0 25px rgb(255, 255, 255),
-                 0 0 50px rgb(254, 254, 255);
+    color: white;
+    text-shadow: 0 0 25px brown,
+                 0 0 50px brown;
     transform: scale(1.1);
 }
 span{
-    color: grey;
+    color: white
 }
 .navbar a{
     font-size: 18px;
     color: white;
     font-weight: 500;
-    margin: 0 20px;
+    margin: 0 15px;
     border-bottom: 3px solid transparent;
     transition: 0.3s ease;
 }
 .navbar a:hover,
 .navbar a.active{
-    color:blue;
-    border-bottom: 3px solid rgb(255, 255, 255);
+    color:white;
+    border-bottom: 3px solid rgb(104, 42, 0, 0.747);
 }
 .contact{
-    padding: 10px 28px;
-    background-color: white;
+    padding: 10px 20px;
+    background-color: rgb(255, 255, 255);
     color: black;
     border: 2px solid transparent;
     border-radius: 8px;
     font-size: 16px;
-    letter-spacing: 1px;
     font-weight: 600;
     transition: 0.3s ease;
 }
 .contact:hover{
-    background-color: blue;
-    box-shadow: 0 0 25px blue;
+    background-color: rgb(104, 42, 0, 0.747);
+    box-shadow: 0 0 25px rgb(104, 42, 0, 0.747);
     color: white;
 }
 
 
 #Services {
   color: #E8D9F1;
-  text-align: center;
+  text-align: center;  
 }
 
 
 .Services {
-  background: url("https://png.pngtree.com/thumb_back/fw800/background/20231006/pngtree-computerized-seo-background-exploring-web-development-programming-code-and-app-development-image_13515246.png")center/cover no-repeat;
   display: flex;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   flex-wrap: wrap;
   justify-content: center;
   gap: 2rem;
   margin-top: 2em;
+  background: none;
 }
 
 .sersec {
     margin-top: 4em;
+    background: none;
 }
 
 .t-card {
-  background: #1c1c1c;
+  background: rgb(104, 42, 0, 0.747);
   border: 1px solid #ffffff;
   overflow: hidden;
   border-radius: 12px;
@@ -106,7 +111,7 @@ span{
     object-fit: cover;
 }
 .t-card {
-  background: #1c1c1c;
+  background: rgb(104, 42, 0, 0.747);
   border: 1px solid #ffffff;
   overflow: hidden;
   border-radius: 12px;
@@ -120,3 +125,68 @@ span{
   transform: scale(1.07);
   box-shadow: 0 6px 20px rgb(255, 255, 255);
 }
+
+.footer{
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    padding: 40px 0;
+    background-color: rgb(0, 0, 0);
+}
+.footer .social{
+    text-align: center;
+    padding-bottom: 25px;
+    color: white;
+}
+.footer .social a img{
+    font-size: 24px;
+    color: grey;
+    border: 2px solid rgba(104, 42, 0, 0.747);
+    width: 40px;
+    height: 40px;
+    line-height: 38px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 8px;
+    box-shadow: 0 0 10px rgb(255, 255, 255), 0 0 10px rgb(255, 255, 255);
+    transition: border-color 0.3s ease-in-out;
+}
+.footer .social a:hover{
+    transform: scale(1.2) translateY(-10px);
+    color: rgba(104, 42, 0, 0.747);
+    border: 20px solid transparent rgb(173, 104, 0);
+}
+.footer ul{
+    margin-top: 0;
+    padding: 0;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 0;
+    text-align: center;
+}
+.footer ul li a{
+    color: white;
+    border-bottom: 3px solid transparent;
+    transition: 0.3s ease;
+}
+.footer ul li a:hover{
+    border-bottom: 3px solid rgba(104, 42, 0, 0.747);
+}
+.footer ul li{
+    display: inline-block;
+    padding: 0 15px;
+}
+.footer .copyright{
+    margin-top: 15px;
+    text-align: center;
+    font-size: 12px;
+    color: white;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .portfolio-grid {
+    grid-template-columns: 1fr;
+  }
+    }
