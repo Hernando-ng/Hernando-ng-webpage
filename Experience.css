@@ -3,14 +3,15 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Georgia, 'Times New Roman', Times, serif;
   text-decoration: none;
   list-style: none;
 }
 
 body {
-  background: #f8f8f8;
-  color: #222;
+  background-image:url(https://i.pinimg.com/736x/4e/e5/dc/4ee5dc1bc4b8d235218be521d2bb4ce4.jpg);
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 /* Header */
@@ -19,7 +20,7 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  padding: 35px 12%;
+  padding: 20px 10%;
   background: #000;
   backdrop-filter: blur(10px);
   display: flex;
@@ -29,16 +30,16 @@ body {
 }
 
 .logo {
-  font-size: 25px;
+  font-size: 24px;
   color: #fff;
   font-weight: 600;
   transition: 0.3s ease;
 }
 
 .logo:hover{
-  color: blue;
-    text-shadow: 0 0 25px rgb(255, 255, 255),
-                 0 0 50px rgb(254, 254, 255);
+  color: white;
+    text-shadow: 0 0 25px brown,
+                 0 0 50px brown;
     transform: scale(1.1);
 }
 
@@ -50,52 +51,59 @@ span {
   font-size: 18px;
   color: white;
   font-weight: 500px;
-  margin: 0 20px;
+  margin: 0 15px;
   border-bottom: 3px solid transparent;
   transition: 0.3s;
 }
 
 .navbar a:hover,
 .navbar a.active {
-  color: blue;
-  border-bottom: 2px solid rgb(255, 255, 255);
+  color: white;
+  border-bottom: 2px solid rgb(104, 42, 0, 0.747);
 }
 
 .contact {
-  padding: 10px 28px;
+  padding: 10px 20px;
   background-color: white;
   color: black;
   border: 2px solid transparent;
   border-radius: 8px;
   font-size: 16px;
-  letter-spacing: 1px;
   font-weight: 600;
   transition: 0.3s ease;
 }
 
 .contact:hover {
-  background: blue;
-  box-shadow: 0 0 25px blue;
+  background: rgb(104, 42, 0, 0.747);
+  box-shadow: 0 0 25px rgb(104, 42, 0, 0.747);
   color: white;
 }
 
 /* EXPERIENCE SECTION */
 .experience-section {
   padding: 140px 10% 80px;
-  background-color: white;
+  /*background-color: white;*/
 }
 
 .experience-section h2 {
   text-align: center;
   font-size: 36px;
   margin-bottom: 20px;
-  color: blue;
+  color: rgb(255, 255, 255);
 }
 
 .intro {
   text-align: center;
   line-height: 1.7;
-  color: #444;
+  color: #ffffff;
+  max-width: 800px;
+  margin: 0 auto 60px;
+}
+
+.Web-Developement{
+  text-align: center;
+  line-height: 1.7;
+  color: #ffffff;
   max-width: 800px;
   margin: 0 auto 60px;
 }
@@ -125,13 +133,13 @@ span {
 }
 
 .exp-text h3 {
-  color: blue;
+  color: rgb(104, 42, 0, 0.747);
   margin-bottom: 15px;
 }
 
 .exp-text p, .exp-text ul {
   line-height: 1.7;
-  color: #333;
+  color: #ffffff;
 }
 
 .exp-text ul {
@@ -172,7 +180,7 @@ span {
 }
 
 .skill:hover {
-  background: blue;
+  background: rgb(104, 42, 0, 0.747);
   color: white;
 }
 
@@ -184,15 +192,15 @@ span {
 }
 
 .testimonial-section h2 {
-  color: blue;
+  color: rgb(0, 0, 0);
   margin-bottom: 30px;
 }
 
 .testimonial {
-  background: white;
+  background: rgb(104, 42, 0, 0.747);
   border-radius: 10px;
   padding: 40px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   max-width: 700px;
   margin: 0 auto;
 }
@@ -207,6 +215,65 @@ span {
   color: #000;
 }
 
+.footer{
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    padding: 40px 0;
+    background-color: rgb(0, 0, 0);
+}
+.footer .social{
+    text-align: center;
+    padding-bottom: 25px;
+    color: white;
+}
+.footer .social a img{
+    font-size: 24px;
+    color: grey;
+    border: 2px solid rgba(104, 42, 0, 0.747);
+    width: 40px;
+    height: 40px;
+    line-height: 38px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 8px;
+    box-shadow: 0 0 10px rgb(255, 255, 255), 0 0 10px rgb(255, 255, 255);
+    transition: border-color 0.3s ease-in-out;
+}
+.footer .social a:hover{
+    transform: scale(1.2) translateY(-10px);
+    color: rgb(0, 0, 0);
+    border: 20px solid transparent rgb(173, 104, 0);
+}
+.footer ul{
+    margin-top: 0;
+    padding: 0;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 0;
+    text-align: center;
+}
+.footer ul li a{
+    color: white;
+    border-bottom: 3px solid transparent;
+    transition: 0.3s ease;
+}
+.footer ul li a:hover{
+    border-bottom: 3px solid rgba(104, 42, 0, 0.747);
+}
+.footer ul li{
+    display: inline-block;
+    padding: 0 15px;
+}
+.footer .copyright{
+    margin-top: 15px;
+    text-align: center;
+    font-size: 12px;
+    color: white;
+}
+
+
 /* RESPONSIVE */
 @media (max-width: 900px) {
   .experience-layout {
@@ -215,4 +282,4 @@ span {
   .reverse {
     flex-direction: column;
   }
-}
+  }
