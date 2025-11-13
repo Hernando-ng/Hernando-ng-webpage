@@ -8,7 +8,10 @@
 }
 
 body {
-  background:black
+  background: url(https://i.pinimg.com/1200x/c4/03/0b/c4030b0d68d93fce9fca83796fcce15b.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 /* HEADER */
@@ -17,8 +20,8 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  padding: 30px 12%;
-  background: rgba(0, 0, 0,);
+  padding: 20px 10%;
+  background: rgb(0, 0, 0,);
   backdrop-filter: blur(10px);
   display: flex;
   justify-content: space-between;
@@ -30,40 +33,40 @@ body {
   font-size: 24px;
   font-weight: 600;
   color: white;
-  transition: 0.3s;
+  transition: 0.3s ease;
 }
 
 .logo:hover{
   color: white;
-  text-shadow: 0 0 25px white,
-               0 0 50px blue;
+  text-shadow: 0 0 25px brown,
+               0 0 50px brown;
   transform: scale(1.1);             
 }
 
 .logo span {
-  color: rgb(0, 29, 196);
+  color: rgb(255, 255, 255);
 }
 
 .navbar a {
   font-size: 18px;
   color: #fff;
-  margin: 0 20px;
+  margin: 0 15px;
   font-weight: 500;
-  border-bottom: 2px solid transparent;
+  border-bottom: 3px solid transparent;
   transition: 0.3s ease;
 }
 
 .navbar a:hover,
 .navbar a.active {
   color: white;
-  border-bottom: 2px solid rgb(0, 0, 0);
+  border-bottom: 2px solid rgb(104, 42, 0, 0.747);
 }
 
 .contact {
   background-color: rgb(255, 255, 255);
   color: black;
   padding: 10px 20px;
-  border-radius: 6px;
+  border-radius: 8px;
   border: 2px solid transparent;
   font-size: 16px;
   font-weight: 600;
@@ -71,9 +74,9 @@ body {
 }
 
 .contact:hover {
-  background-color: blue;
+  background-color: rgb(104, 42, 0, 0.747);
   color: rgb(255, 255, 255);
-  box-shadow: 0 0 25px blue;
+  box-shadow: 0 0 25px rgb(104, 42, 0, 0.747);
 }
 
 /* MAIN CONTENT */
@@ -85,7 +88,7 @@ body {
   font-size: 2.5rem;
   text-align: center;
   margin-bottom: 10px;
-  color: blue;
+  color: rgb(255, 255, 255);
 }
 
 .education-header .intro {
@@ -100,7 +103,7 @@ body {
   position: relative;
   margin: 50px 0;
   padding-left: 30px;
-  border-left: 2px solid rgb(0, 27, 180);
+  border-left: 2px solid rgb(255, 255, 255);
 }
 
 .timeline-item {
@@ -111,7 +114,7 @@ body {
 .timeline-dot {
   width: 16px;
   height: 16px;
-  background-color: rgb(1, 51, 187);
+  background-color: rgb(255, 255, 255);
   border-radius: 50%;
   position: absolute;
   left: -9px;
@@ -123,13 +126,13 @@ body {
 }
 
 .timeline-content h3 {
-  color: rgb(11, 47, 204);
+  color: rgb(199, 119, 0);
   font-size: 1.3rem;
   margin-bottom: 8px;
 }
 
 .timeline-content p, .timeline-content ul {
-  color: #ccc;
+  color: #ffffff;
   font-size: 0.95rem;
 }
 
@@ -140,7 +143,7 @@ body {
 }
 
 .dashboard h2 {
-  color: rgb(26, 6, 209);
+  color: rgb(179, 107, 0);
   font-size: 2rem;
   margin-bottom: 30px;
 }
@@ -160,16 +163,81 @@ body {
 
 .card:hover {
   transform: translateY(-8px);
-  box-shadow: 0 0 20px rgb(0, 27, 180);
+  box-shadow: 0 0 20px rgb(192, 125, 0);
 }
 
 .card h3 {
-  color: rgb(11, 47, 204);
+  color: rgb(156, 94, 0);
   margin-bottom: 10px;
   font-size: 1.2rem;
 }
 
 .card p {
-  color: #ddd;
+  color: #ffffff;
   font-size: 0.95rem;
 }
+
+.footer{
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    padding: 40px 0;
+    background-color: rgb(0, 0, 0);
+}
+.footer .social{
+    text-align: center;
+    padding-bottom: 25px;
+    color: white;
+}
+.footer .social a img{
+    font-size: 24px;
+    color: grey;
+    border: 2px solid rgba(104, 42, 0, 0.747);
+    width: 40px;
+    height: 40px;
+    line-height: 38px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 8px;
+    box-shadow: 0 0 10px rgb(255, 255, 255), 0 0 10px rgb(255, 255, 255);
+    transition: border-color 0.3s ease-in-out;
+}
+.footer .social a:hover{
+    transform: scale(1.2) translateY(-10px);
+    color: rgb(0, 0, 0);
+    border: 20px solid transparent rgb(173, 104, 0);
+}
+.footer ul{
+    margin-top: 0;
+    padding: 0;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 0;
+    text-align: center;
+}
+.footer ul li a{
+    color: white;
+    border-bottom: 3px solid transparent;
+    transition: 0.3s ease;
+}
+.footer ul li a:hover{
+    border-bottom: 3px solid rgba(104, 42, 0, 0.747);
+}
+.footer ul li{
+    display: inline-block;
+    padding: 0 15px;
+}
+.footer .copyright{
+    margin-top: 15px;
+    text-align: center;
+    font-size: 12px;
+    color: white;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .portfolio-grid {
+    grid-template-columns: 1fr;
+  }
+  }
